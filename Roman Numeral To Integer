@@ -1,0 +1,65 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		//your code here
+                Scanner sc=new Scanner(System.in);
+                int n=sc.nextInt();
+                while(n>=1000){
+                        n=n-1000;
+                        System.out.print("M");
+                }
+                if(n>=900 && n<1000){
+                        n=n-900;
+                        System.out.print("CM");
+                }
+                if(n>=500 && n<900){
+                        n=n-500;
+                        System.out.print("D");
+                }
+                if(n>=400 && n<500 ){
+                        n=n-400;
+                        System.out.print("CD");
+                }
+                while(n>=100 && n<400 ){
+                        n=n-100;
+                        System.out.print("C");
+                }
+                if(n<100 && n>=90){
+                        n=n-90;
+                        System.out.print("XC");
+                }
+                if(n>=50 && n<90){
+                        n=n-50;
+                        System.out.print("L");
+                }
+                if(n>=40 &&  n<50){
+                        n=n-40;
+                        System.out.print("XL");
+                }
+                while(n>=10 && n<40){
+                        n=n-10;
+                        System.out.print("X");
+                }
+                if(n<10 && n>=9){
+                        n=n-9;
+                        System.out.print("IX");
+                }
+                if(n>=5 && n<9){
+                        n=n-5;
+                        System.out.print("V");
+                }
+                if(n<5 && n>=4){
+                        n=n-4;
+                        System.out.print("IV");
+                }
+                while(n<4 && n>=1){
+                        n=n-1;
+                        System.out.print("I");
+                }
+	}
+}
